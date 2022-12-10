@@ -4,23 +4,23 @@ def part_1():
     with open(os.path.join(os.path.dirname(__file__), 'day-1.txt')) as f:
         input = f.read()
 
-    groupsOfCalories = input.split("\n\n")
+    groups_of_calories = input.split("\n\n")
 
-    sumsOfGroupsOfCalories = [sum([int(x) for x in group.split("\n")]) for group in groupsOfCalories]
+    sums_of_groups_of_calories = [sum([int(x) for x in group.split("\n")]) for group in groups_of_calories]
 
-    print(max(sumsOfGroupsOfCalories))
+    print(max(sums_of_groups_of_calories))
 
 def part_2():
     with open(os.path.join(os.path.dirname(__file__), 'day-1.txt')) as f:
         input = f.read()
 
-    groupsOfCalories = input.split("\n\n")
+    groups_of_calories = input.split("\n\n")
 
-    sumsOfGroupsOfCalories = [sum([int(x) for x in group.split("\n")]) for group in groupsOfCalories]
+    sums_of_groups_of_calories = [sum([int(x) for x in group.split("\n")]) for group in groups_of_calories]
 
-    sumsOfGroupsOfCalories.sort()
+    sums_of_groups_of_calories.sort()
 
-    print(sum(sumsOfGroupsOfCalories[len(sumsOfGroupsOfCalories) - 3::]))
+    print(sum(sums_of_groups_of_calories[len(sums_of_groups_of_calories) - 3::]))
 
 
 if __name__ == "__main__":
