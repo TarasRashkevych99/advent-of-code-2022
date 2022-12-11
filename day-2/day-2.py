@@ -15,6 +15,7 @@ def part_1():
     import os
 
     shape_scors = {'X': 1, 'Y': 2, 'Z': 3}
+    
     strategies = {
         "A Y": 6, 
         "B Z": 6, 
@@ -40,6 +41,7 @@ def part_2():
     import os
 
     shape_scors = {'X': 1, 'Y': 2, 'Z': 3}
+
     strategies = {
         "A Y": 3, 
         "B Z": 6, 
@@ -52,7 +54,7 @@ def part_2():
         "C Y": 3
     }
 
-    shape_to_choose = {
+    shapes_to_choose = {
         "A Y": 'X', 
         "B Z": 'Z', 
         "C X": 'Y',
