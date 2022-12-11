@@ -15,7 +15,7 @@ def part_1():
     import os
 
     shape_scors = {'X': 1, 'Y': 2, 'Z': 3}
-    
+
     strategies = {
         "A Y": 6, 
         "B Z": 6, 
@@ -71,7 +71,7 @@ def part_2():
 
     rounds = input.split('\n')
 
-    total_score = sum([strategies[round] + shape_scors[shape_to_choose[round]] for round in rounds])
+    total_score = sum([strategies[round] + shape_scors[shapes_to_choose[round]] for round in rounds])
 
     print(total_score)
 
